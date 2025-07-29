@@ -1,0 +1,20 @@
+{
+  "buildFiles": [
+    "/home/mauriciohdz/development/flutter/packages/flutter_tools/gradle/src/main/scripts/CMakeLists.txt"
+  ],
+  "cleanCommandsComponents": [
+    [
+      "/usr/bin/ninja",
+      "-C",
+      "/home/mauriciohdz/AndroidStudioProjects/checador_tique/build/.cxx/Debug/932n1l71/armeabi-v7a",
+      "clean"
+    ]
+  ],
+  "buildTargetsCommandComponents": [
+    "/usr/bin/ninja",
+    "-C",
+    "/home/mauriciohdz/AndroidStudioProjects/checador_tique/build/.cxx/Debug/932n1l71/armeabi-v7a",
+    "{LIST_OF_TARGETS_TO_BUILD}"
+  ],
+  "libraries": {}
+}

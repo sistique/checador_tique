@@ -1,0 +1,2 @@
+/home/mauriciohdz/AndroidStudioProjects/checador_tique/build/.cxx/RelWithDebInfo/51j5c45q/x86/CMakeFiles/edit_cache.dir
+/home/mauriciohdz/AndroidStudioProjects/checador_tique/build/.cxx/RelWithDebInfo/51j5c45q/x86/CMakeFiles/rebuild_cache.dir

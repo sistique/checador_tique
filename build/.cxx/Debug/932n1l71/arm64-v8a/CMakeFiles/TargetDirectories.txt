@@ -1,0 +1,2 @@
+/home/mauriciohdz/AndroidStudioProjects/checador_tique/build/.cxx/Debug/932n1l71/arm64-v8a/CMakeFiles/edit_cache.dir
+/home/mauriciohdz/AndroidStudioProjects/checador_tique/build/.cxx/Debug/932n1l71/arm64-v8a/CMakeFiles/rebuild_cache.dir

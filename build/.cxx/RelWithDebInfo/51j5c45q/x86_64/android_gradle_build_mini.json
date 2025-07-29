@@ -1,0 +1,20 @@
+{
+  "buildFiles": [
+    "/home/mauriciohdz/development/flutter/packages/flutter_tools/gradle/src/main/scripts/CMakeLists.txt"
+  ],
+  "cleanCommandsComponents": [
+    [
+      "/usr/bin/ninja",
+      "-C",
+      "/home/mauriciohdz/AndroidStudioProjects/checador_tique/build/.cxx/RelWithDebInfo/51j5c45q/x86_64",
+      "clean"
+    ]
+  ],
+  "buildTargetsCommandComponents": [
+    "/usr/bin/ninja",
+    "-C",
+    "/home/mauriciohdz/AndroidStudioProjects/checador_tique/build/.cxx/RelWithDebInfo/51j5c45q/x86_64",
+    "{LIST_OF_TARGETS_TO_BUILD}"
+  ],
+  "libraries": {}
+}

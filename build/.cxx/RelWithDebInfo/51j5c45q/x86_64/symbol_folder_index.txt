@@ -1,0 +1,1 @@
+/home/mauriciohdz/AndroidStudioProjects/checador_tique/build/app/intermediates/cxx/RelWithDebInfo/51j5c45q/obj/x86_64

@@ -1,0 +1,20 @@
+                        -H/home/mauriciohdz/development/flutter/packages/flutter_tools/gradle/src/main/scripts
+-DCMAKE_SYSTEM_NAME=Android
+-DCMAKE_EXPORT_COMPILE_COMMANDS=ON
+-DCMAKE_SYSTEM_VERSION=21
+-DANDROID_PLATFORM=android-21
+-DANDROID_ABI=x86
+-DCMAKE_ANDROID_ARCH_ABI=x86
+-DANDROID_NDK=/home/mauriciohdz/Android/Sdk/ndk/27.0.12077973
+-DCMAKE_ANDROID_NDK=/home/mauriciohdz/Android/Sdk/ndk/27.0.12077973
+-DCMAKE_TOOLCHAIN_FILE=/home/mauriciohdz/Android/Sdk/ndk/27.0.12077973/build/cmake/android.toolchain.cmake
+-DCMAKE_MAKE_PROGRAM=/usr/bin/ninja
+-DCMAKE_LIBRARY_OUTPUT_DIRECTORY=/home/mauriciohdz/AndroidStudioProjects/checador_tique/build/app/intermediates/cxx/RelWithDebInfo/51j5c45q/obj/x86
+-DCMAKE_RUNTIME_OUTPUT_DIRECTORY=/home/mauriciohdz/AndroidStudioProjects/checador_tique/build/app/intermediates/cxx/RelWithDebInfo/51j5c45q/obj/x86
+-DCMAKE_BUILD_TYPE=RelWithDebInfo
+-B/home/mauriciohdz/AndroidStudioProjects/checador_tique/build/.cxx/RelWithDebInfo/51j5c45q/x86
+-GNinja
+-Wno-dev
+--no-warn-unused-cli
+                        Build command args: []
+                        Version: 2
