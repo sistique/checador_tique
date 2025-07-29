@@ -50,6 +50,7 @@ class _LoginPageState extends State<LoginPage> {
       }
     } else {
       if (!kIsWeb && Platform.isAndroid) {
+
         final localUser = await DBHelper.getUser(username);
         if (localUser != null && localUser.passwordHash == passwordHash) {
           _goToHome(localUser.empleadoId);
