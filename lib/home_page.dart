@@ -104,21 +104,6 @@ class _ChecadorPageState extends State<HomePage> {
     if (!kIsWeb && Platform.isAndroid) {
       int id = await DBHelper.insertar(registro);
       await enviarPendientes();
-
-      if (id > 0) {
-        if (context.mounted) {
-          ScaffoldMessenger.of(context).showSnackBar(
-            SnackBar(
-                content: Text('Registro insertado correctamente')),
-          );
-        }
-      } else {
-        if (context.mounted) {
-          ScaffoldMessenger.of(context).showSnackBar(
-            SnackBar(content: Text('Error al insertar registro')),
-          );
-        }
-      }
     }else{
       try {
         final res = await http.post(
@@ -185,6 +170,12 @@ class _ChecadorPageState extends State<HomePage> {
       }
 
       if (res.statusCode == 200) {
+        if (context.mounted) {
+          ScaffoldMessenger.of(context).showSnackBar(
+            SnackBar(
+                content: Text('Registro insertado correctamente')),
+          );
+        }
         await DBHelper.marcarComoEnviado(r['id']);
       }
     }
