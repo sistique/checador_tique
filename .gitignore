@@ -32,6 +32,11 @@ migrate_working_dir/
 .pub-cache/
 .pub/
 /build/app/
+/android/key.properties
+/android/app/upload-keystore.jks
+/build/.cxx/
+/android/app/build.gradle.kts
+/android/app/src/main/AndroidManifest.xml
 
 # Symbolication related
 app.*.symbols
