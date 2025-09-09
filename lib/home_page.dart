@@ -61,7 +61,7 @@ class _ChecadorPageState extends State<HomePage> {
     }
 
     LocationPermission permission = await Geolocator.checkPermission();
-    if (permission == LocationPermission.denied || permission == LocationPermission.deniedForever) {
+    /*if (permission == LocationPermission.denied || permission == LocationPermission.deniedForever) {
       permission = await Geolocator.requestPermission();
 
       if (permission != LocationPermission.always && permission != LocationPermission.whileInUse) {
@@ -72,7 +72,36 @@ class _ChecadorPageState extends State<HomePage> {
         }
         return;
       }
+    }*/
+    if (kIsWeb) {
+      if (permission == LocationPermission.denied) {
+        permission = await Geolocator.requestPermission();
+      }
+
+      if (permission != LocationPermission.whileInUse) {
+        if (context.mounted) {
+          ScaffoldMessenger.of(context).showSnackBar(
+            const SnackBar(content: Text('Permiso de ubicación denegado en navegador')),
+          );
+        }
+        return;
+      }
+    } else {
+      if (permission == LocationPermission.denied || permission == LocationPermission.deniedForever) {
+        permission = await Geolocator.requestPermission();
+      }
+
+      if (permission != LocationPermission.always &&
+          permission != LocationPermission.whileInUse) {
+        if (context.mounted) {
+          ScaffoldMessenger.of(context).showSnackBar(
+            const SnackBar(content: Text('Permiso de ubicación denegado en dispositivo')),
+          );
+        }
+        return;
+      }
     }
+
 
     late Position pos;
     try {
