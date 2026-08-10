@@ -2,7 +2,7 @@
 2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
 3    package="com.baseflow.geolocator" >
 4
-5    <uses-sdk android:minSdkVersion="21" />
+5    <uses-sdk android:minSdkVersion="24" />
 6
 7    <application>
 7-->/home/mauriciohdz/.pub-cache/hosted/pub.dev/geolocator_android-5.0.2/android/src/main/AndroidManifest.xml:4:5-10:19
